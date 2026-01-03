@@ -5,7 +5,7 @@ static uint16_t current_speed = ENGINE_SPEED_MIN_RPM;
 static uint16_t target_speed = ENGINE_SPEED_MIN_RPM;
 
 /* Increment used for gradual speed ramp-up (RPM per update cycle) */
-#define SPEED_INCREMENT_STEP   (100U)
+#define SPEED_INCREMENT_STEP   (75U)
 
 void EngineControl_Init(void)
 {
