@@ -18,7 +18,8 @@ jobs:
       run: sudo apt-get update && sudo apt-get install -y build-essential
 
     - name: Build project
-      run: gcc -Wall -Werror -o EngineControlEngine EngineControlModule/EngineControl.c main.c
+      run: |
+        gcc -Wall -Werror -I EngineControlModule -o EngineControlEngine EngineControlModule/EngineControl.c main.c
 
     - name: Run executable
       run: ./EngineControlEngine
