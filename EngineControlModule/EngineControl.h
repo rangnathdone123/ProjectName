@@ -5,7 +5,7 @@
 
 /* Macros for engine speed limits */
 #define ENGINE_SPEED_MIN_RPM      (0U)
-#define ENGINE_SPEED_MAX_RPM      (7000U)
+#define ENGINE_SPEED_MAX_RPM      (5000U)
 
 /* Engine states */
 #define ENGINE_OFF               (0U)
