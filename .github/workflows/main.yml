@@ -8,7 +8,6 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
@@ -19,8 +18,4 @@ jobs:
       run: sudo apt-get update && sudo apt-get install -y build-essential
 
     - name: Build project
-      run: |
-        gcc -Wall -Werror -o EngineControl EngineControl.c
-
-    - name: Run application (optional)
-      run: ./EngineControl
+      run: gcc -Wall -Werror -o EngineControl EngineControlModule/EngineControl.c
